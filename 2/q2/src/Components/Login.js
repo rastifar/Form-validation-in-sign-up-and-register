@@ -32,9 +32,10 @@ const Login = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     if (!Object.keys(errors).length) {
-      setMessage("form submitted successfully");
+      setMessage(true);
     } else {
-      setMessage("error happend");
+     
+      setMessage(false);
     }
   };
 
@@ -85,12 +86,12 @@ const Login = () => {
           form="my-form"
         >
           ورود
+          </button>
           <Modal
             open={isOpen}
             onClose={() => setIsOpen(false)}
             message={message}
           />
-        </button>
       </div>
     </div>
   );
