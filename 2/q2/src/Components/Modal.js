@@ -8,9 +8,9 @@ const Modal = ({ open, onClose , children, message }) => {
  
   return ReactDom.createPortal(
     <>
-      <div className={styles.overlaystyle }>
+      <div className={ styles.overlaystyle }>
         <div className={styles.modalstyle}>
-                  <div className={styles.header}>{message? <FaUserCheck/>:<FaUserAltSlash/>}</div>
+          <div className={styles.header}>{message ? <FaUserCheck className={styles.green} /> : <FaUserAltSlash className={styles.red}/>}</div>
           <div className={styles.body}>{message?'اطلاعات معتبر است':'اطلاعات معتبر نیست'}</div>
           <div className={styles.footer}>
             <button onClick={onClose}>بستن</button>

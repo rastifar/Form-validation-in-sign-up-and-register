@@ -202,12 +202,12 @@ const Signup = () => {
           form="my-form"
         >
           ثبت نام
+        </button>
           <Modal
             open={isOpen}
             onClose={() => setIsOpen(false)}
             message={message}
           />
-        </button>
       </div>
     </div>
   );
