@@ -1,3 +1,6 @@
 # Form-validation-in-sign-up-and-register
-In this react js app I created a sign up and register form 
-which has form validation 
+In q2 there is a react js app which I created a sign up and register form 
+with form validation 
+![](screenshots.png)
+
+q1 is a simple practice on useMemo
